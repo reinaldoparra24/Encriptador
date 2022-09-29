@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!--pagina responsiva,  initial-scale=1.0 no permite zoom en la pag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reto 1 Encriptador de Texto</title>
+        <!--CSS-->
+        <link ref="stylesheet" hfer="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Fuentes-->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <!--alerta con estilo-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="img/logo-alura.png" alt="Logo de Alura" class="logo"><h1>ENCRIPTADOR DE TEXTO</h1>
+        </header>
+        <main>
+            <div class="criptografia">
+                <textarea wrap="hard" id="input" placeholder="Ingrese aquí el texto..." class="texto"></textarea>
+                <p id="aviso"><img src="img/exclamacion.png" alt="Punto de exclamación">¡Recuerda sólo usar letras minúsculas y sin tildes o acentos!</p>
+                <div class="btn-criptografia">
+                    <button id="encriptador" class="btn">Encriptar</button>
+                    <button id="desencriptador" class="btn">Desencriptar</button>
+                    <button id="pegar" class="btn">Pegar</button>
+                </div>
+            </div>
+            <div class="resultado">
+                <textarea wrap="hard" id="output" readonly placeholder="Ohh rayos, parece que no se ha escrito nada" class="texto-resultado"></textarea>
+                <button id="copiar" class="btn">Copiar</button>
+                <button class="btn" id="limpiar">Limpiar campos</button>
+            </div>
+        </main>
+        <footer>
+            <p>© Esteban Parra</p>
+            <a href="https://www.linkedin.com/in/reinaldo-esteban-parra/"><img src="img/linkedin-logo.png" alt="Logo do LinkedIn" class="linkedin"></a>
+            <a href="https://github.com/reinaldoparra24"><img src="img/github-logo.png" alt="Logo do GitHub" class="github"></a>
+        </footer>
+        <script type="text/javascript" src="JavaScript/script.js"></script>
+    </body>
+</html>
